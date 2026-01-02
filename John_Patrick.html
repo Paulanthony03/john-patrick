@@ -17,18 +17,25 @@
             height: 100%;
         }
 
-        video {
+        .video-container {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* No zoom */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 
 <body>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <iframe 
+            src="https://drive.google.com/file/d/1J54U9jHg-zj-rH5XWCAt2zEpQBPQbcAY/preview"
+            allow="autoplay; fullscreen">
+        </iframe>
+    </div>
 </body>
 </html>
